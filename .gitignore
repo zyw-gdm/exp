@@ -1,0 +1,8 @@
+.idea/
+target/
+.bsp/
+*.class
+*.log
+**/target/
+*.pyc
+**.iml

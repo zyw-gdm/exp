@@ -1,0 +1,17 @@
+
+//name := "HelloLocal"
+lazy val root = Project(id = "HelloLocal", base = file("."))
+.dependsOn(HelloRemote)
+
+version := "1.0"
+
+scalaVersion := "2.12.11"
+
+resolvers += "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releases/"
+
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-actor" % "2.6.13",
+  "com.typesafe.akka" %% "akka-actor-typed" % "2.6.13",
+  "com.typesafe.akka" %% "akka-remote" % "2.6.13"
+)
+
